@@ -1,0 +1,30 @@
+type Token @entity {
+  id: ID!
+  contractAddress: Bytes!
+  mainChain: BigInt!
+  name: String!
+  symbol: String!
+  tokenId: BigInt!
+  isMuon: Boolean!
+  isMain: Boolean!
+}
+
+type Entry @entity {
+  id: ID!
+  txId: BigInt!
+  tokenId: BigInt!
+  nftId: BigInt!
+  fromChain: BigInt!
+  toChain: BigInt!
+  account: Bytes!
+  block: BigInt!
+  timestamp: BigInt!
+  deposited: Boolean!
+  claimed: Boolean!
+  contractAddress: Bytes!
+  mainChain: BigInt!
+  isMuon: Boolean!
+  isMain: Boolean!
+  name: String!
+  symbol: String!
+}

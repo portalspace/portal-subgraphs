@@ -1,0 +1,37 @@
+specVersion: 0.0.2
+description: Securely move assets across blockchains using Muon technology.
+repository: https://github.com/portalspace/portal-subgraphs
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: ERC721Bridge
+    network: rinkeby
+    source:
+      address: '0x355Dc1826A7e401CD17eb184fBB751C94C773873'
+      abi: NFTBridge
+      startBlock: 9737514
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      file: ./src/mapping.ts
+      entities:
+        - Deposit
+        - Token
+      abis:
+        - name: NFTBridge
+          file: ./abis/NFTBridge.json
+        - name: ERC721
+          file: ./abis/ERC721.json
+        - name: ERC721NameBytes
+          file: ./abis/ERC721NameBytes.json
+        - name: ERC721SymbolBytes
+          file: ./abis/ERC721SymbolBytes.json
+      eventHandlers:
+        - event: Deposit(uint256,uint256,uint256[],indexed uint256,indexed address)
+          handler: deposit
+        - event: Claim(indexed address,uint256[],indexed uint256,uint256,uint256)
+          handler: claim
+        - event: AddToken(address,uint256,bool)
+          handler: addToken
