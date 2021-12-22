@@ -11,7 +11,7 @@
         "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 /portalspace/portalspace",
 
         "deploy:rinkeby": "graph deploy portalspace/erc721bridge-rinkeby --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token f57a33997967464583b4f95d7d716015",
-        "deploy:mumbai": "graph deploy  --debug --access-token 7fc793dac7674f759f27a942fb58e07b --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ coinlordd/nft-bridge-mumbai subgraph.yaml",
+        "deploy:mumbai":  "graph deploy portalspace/erc721bridge-mumbai  --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token f57a33997967464583b4f95d7d716015",
 
         "prepare:rinkeby": "mustache config/rinkeby.json template.yaml > subgraph.yaml",
         "prepare:mumbai": "mustache config/mumbai.json template.yaml > subgraph.yaml"
