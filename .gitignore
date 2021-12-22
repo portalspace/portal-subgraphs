@@ -1,7 +1,6 @@
 # Builds and generated
 /build
 /generated
-subgraphs/**/packages
 
 # Logs
 logs
