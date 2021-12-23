@@ -15,6 +15,7 @@
     "prepare:mumbai": "yarn workspaces run prepare:mumbai"
   },
   "devDependencies": {
+    "@amxx/graphprotocol-utils": "^1.1.0-alpha.1",
     "@graphprotocol/graph-cli": "^0.25.1",
     "@graphprotocol/graph-ts": "^0.24.1",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
@@ -24,5 +25,8 @@
     "mustache": "^4.2.0",
     "prettier": "^2.0.0",
     "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.1"
   }
 }

@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.1
 description: Securely move assets across blockchains using Muon technology.
 repository: https://github.com/portalspace/portal-subgraphs
 schema:

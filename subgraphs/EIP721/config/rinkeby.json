@@ -1,0 +1,5 @@
+{
+  "network": "rinkeby",
+  "startBlock": "0",
+  "chainId": "4"
+}

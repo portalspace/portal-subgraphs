@@ -1,19 +1,19 @@
 {
-    "name": "ERC721Bridge",
-    "private": true,
-    "license": "MIT",
-    "version": "1.0.0",
-    "scripts": {
-        "codegen": "graph codegen --output-dir ./generated/",
-        "build": "graph build",
-        "create-local": "graph create --node http://localhost:8020/ /portalspace/portalspace",
-        "remove-local": "graph remove --node http://localhost:8020/ /portalspace/portalspace",
-        "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 /portalspace/portalspace",
+  "name": "ERC721Bridge",
+  "private": true,
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "codegen": "graph codegen --output-dir ./generated/",
+    "build": "graph build",
+    "create-local": "graph create --node http://localhost:8020/ /portalspace/portalspace",
+    "remove-local": "graph remove --node http://localhost:8020/ /portalspace/portalspace",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 /portalspace/portalspace",
 
-        "deploy:rinkeby": "graph deploy portalspace/erc721bridge-rinkeby --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token f57a33997967464583b4f95d7d716015",
-        "deploy:mumbai":  "graph deploy portalspace/erc721bridge-mumbai  --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token f57a33997967464583b4f95d7d716015",
+    "deploy:rinkeby": "graph deploy portalspace/erc721bridge-rinkeby --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token 3a856c233d00409aa075e52daf0059b7",
+    "deploy:mumbai":  "graph deploy portalspace/erc721bridge-mumbai  --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token 3a856c233d00409aa075e52daf0059b7",
 
-        "prepare:rinkeby": "mustache config/rinkeby.json template.yaml > subgraph.yaml",
-        "prepare:mumbai": "mustache config/mumbai.json template.yaml > subgraph.yaml"
-    }
+    "prepare:rinkeby": "mustache config/rinkeby.json template.yaml > subgraph.yaml",
+    "prepare:mumbai": "mustache config/mumbai.json template.yaml > subgraph.yaml"
+  }
 }
