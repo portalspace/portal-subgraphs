@@ -1,0 +1,5 @@
+{
+  "network": "avalanche",
+  "startBlock": "0",
+  "chainId": "43114"
+}

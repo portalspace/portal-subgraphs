@@ -13,9 +13,15 @@
     "deploy:mainnet": "graph deploy portalspace/eip721-mainnet --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token 3a856c233d00409aa075e52daf0059b7",
     "deploy:rinkeby": "graph deploy portalspace/eip721-rinkeby --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token 3a856c233d00409aa075e52daf0059b7",
     "deploy:mumbai":  "graph deploy portalspace/eip721-mumbai  --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token 3a856c233d00409aa075e52daf0059b7",
+    "deploy:avalanche":  "graph deploy portalspace/eip721-avalanche-c  --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token 3a856c233d00409aa075e52daf0059b7",
+    "deploy:fantom":  "graph deploy portalspace/eip721-fantom  --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token 3a856c233d00409aa075e52daf0059b7",
+    "deploy:matic":  "graph deploy portalspace/eip721-matic  --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token 3a856c233d00409aa075e52daf0059b7",
 
     "prepare:mainnet": "mustache config/mainnet.json template.yaml > subgraph.yaml",
     "prepare:rinkeby": "mustache config/rinkeby.json template.yaml > subgraph.yaml",
-    "prepare:mumbai": "mustache config/mumbai.json template.yaml > subgraph.yaml"
+    "prepare:mumbai": "mustache config/mumbai.json template.yaml > subgraph.yaml",
+    "prepare:avalanche": "mustache config/avalanche.json template.yaml > subgraph.yaml",
+    "prepare:fantom": "mustache config/fantom.json template.yaml > subgraph.yaml",
+    "prepare:matic": "mustache config/matic.json template.yaml > subgraph.yaml"
   }
 }
